@@ -1,0 +1,77 @@
+.container .section-title-news {
+  margin-top: 120px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  .container .section-title-news {
+    display: block;
+  }
+}
+.container .business-articles {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+@media (min-width: 1000px) {
+  .container .business-articles {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1400px) {
+  .container .business-articles {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.container .business-articles article {
+  margin-bottom: 20px;
+  position: relative;
+  text-decoration: none;
+}
+.container .business-articles article:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  background-color: #000;
+  bottom: 0;
+}
+.container .business-articles article:hover:before {
+  transform: scaleX(1);
+}
+.container .business-articles article:hover {
+  cursor: pointer;
+}
+.container .business-articles article div {
+  position: relative;
+}
+.container .business-articles article div .date {
+  position: absolute;
+  left: 20px;
+  background-color: #F9D783;
+  padding: 6px;
+  top: 20px;
+  margin: 0;
+  max-height: 56px;
+  height: 100%;
+  text-align: center;
+}
+.container .business-articles article div .date p {
+  color: black;
+}
+.container .business-articles article div .article-image {
+  max-width: 420px;
+  width: 100%;
+  max-height: 230px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .business-articles article p {
+  font-weight: 400;
+  color: #6A6C71;
+}

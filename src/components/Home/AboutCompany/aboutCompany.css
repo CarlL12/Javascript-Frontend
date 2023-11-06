@@ -1,0 +1,152 @@
+.about {
+  margin-bottom: 10rem;
+}
+@media (max-width: 1000px) {
+  .about {
+    margin-bottom: 0px;
+  }
+}
+.about .container {
+  display: flex;
+  padding: 0;
+  justify-content: flex-end;
+  position: relative;
+  padding-bottom: 3rem;
+}
+@media (max-width: 1000px) {
+  .about .container {
+    justify-content: center;
+  }
+}
+@media (max-width: 770px) {
+  .about .container {
+    padding-bottom: 0px;
+  }
+}
+.about .container .tablet {
+  margin-left: 5rem;
+  position: absolute;
+  left: 0;
+  width: 40%;
+}
+@media (max-width: 1000px) {
+  .about .container .tablet {
+    display: none;
+  }
+}
+@media (max-width: 1400px) {
+  .about .container .tablet {
+    margin-left: 0;
+  }
+}
+.about .container .founder {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+@media (max-width: 1000px) {
+  .about .container .founder {
+    display: none;
+  }
+}
+.about .container .company {
+  width: 532px;
+  margin-right: 6rem;
+}
+@media (max-width: 1000px) {
+  .about .container .company .sectionTitle {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .about .container .company {
+    width: auto;
+    margin: 0;
+    margin-top: 1.5rem;
+    padding-bottom: 48px;
+  }
+}
+@media (max-width: 1400px) {
+  .about .container .company {
+    margin-right: 0;
+  }
+}
+.about .container .company p {
+  margin-top: 3rem;
+}
+@media (max-width: 1000px) {
+  .about .container .company p {
+    text-align: center;
+  }
+}
+.about .container .company .buttons {
+  margin-top: 6rem;
+  padding-bottom: 1rem;
+  display: flex;
+}
+@media (max-width: 1000px) {
+  .about .container .company .buttons {
+    margin-top: 32px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.about .container .company .buttons .intro {
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 48px;
+  border-radius: 24px;
+  padding: 8px 16px;
+  position: relative;
+}
+@media (max-width: 770px) {
+  .about .container .company .buttons .intro {
+    padding: 4px 8px;
+  }
+}
+.about .container .company .buttons .intro:hover i {
+  color: rgb(255, 4, 37);
+  font-weight: 700;
+  transition: color 0.5s ease, font-weight 0.3s ease-in-out;
+}
+@media (max-width: 400px) {
+  .about .container .company .buttons .intro {
+    margin-left: 0;
+  }
+}
+.about .container .company .buttons .intro:before {
+  position: absolute;
+  content: "";
+  color: #000;
+  height: 2px;
+  width: 60%;
+  background-color: #000;
+  bottom: 12px;
+  right: 8px;
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: top left;
+}
+@media (max-width: 770px) {
+  .about .container .company .buttons .intro:before {
+    transition: none;
+    content: none;
+  }
+}
+.about .container .company .buttons .intro:hover:before {
+  color: black;
+  transform: scaleX(1);
+}
+@media (max-width: 770px) {
+  .about .container .company .buttons .intro:hover:before {
+    transition: none;
+  }
+}
+.about .container .company .buttons .intro i {
+  font-size: 40px;
+  margin-right: 10px;
+}

@@ -1,0 +1,28 @@
+.wrapper {
+
+    background-color: #F0EFE9;
+    position: relative;
+    
+}
+
+@media (max-width: 500px) {
+
+
+    .wrapper {padding-bottom: 32px;} 
+}
+
+.background-lines {
+    position: absolute;
+    width: 836px;
+    height: 215px;
+    bottom: 0;
+    left: 0;
+}
+
+@media (max-width: 1400px) {
+    .background-lines {
+
+      display: none;
+
+    }
+ }

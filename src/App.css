@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&family=Josefin+Sans:ital,wght@1,600&family=Phudu:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700;9..40,900&family=Josefin+Sans:ital,wght@1,600&family=Phudu:wght@600&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+h1, h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-transparent {
+  font-weight: 500;
+  background-color: transparent;
+  padding: 0.8rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  border-radius: 2rem;
+  border: solid black;
+  border-width: 0.1rem;
+}
+@media (max-width: 1000px) {
+  .btn-transparent {
+    padding: 12px 48px;
+    display:none;
   }
 }
+.btn-transparent i {
+  margin-left: 0.3rem;
+}
+.btn-transparent:hover {
+  background-color: black;
+  color: white;
+  color: white;
+  transition: background-color 0.25s ease-in, color 0.2s ease-in;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btn-yellow {
+  font-weight: 500;
+  background-color: #F9D783;
+  padding: 0.8rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  border-radius: 2rem;
+}
+@media (max-width: 990px) {
+  .btn-yellow {
+    padding: 12px 48px;
+  }
+}
+.btn-yellow i {
+  margin-left: 0.3rem;
+}
+.btn-yellow:hover {
+  background-color: black;
+  color: white;
+  transition: background-color 0.25s ease-in, color 0.2s ease-in;
+}
+
+.btn-black {
+  font-weight: 500;
+  background-color: black;
+  padding: 0.8rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  border-radius: 2rem;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 990px) {
+  .btn-black {
+    padding: 12px 48px;
   }
 }
+@media (max-width: 500px) {
+  .btn-black {
+    padding: 12px 44px;
+  }
+}
+.btn-black i {
+  margin-left: 0.3rem;
+}
+.btn-black:hover {
+  background-color: #EDCF87;
+  color: black;
+  transition: background-color 0.25s ease-in, color 0.2s ease-in;
+}
+
+.sectionTitle {
+  margin-right: 24px;
+}
+.sectionTitle div {
+  color: #F94D1C;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-left: 1rem;
+}
+@media (max-width: 1000px) {
+     .sectionTitle div {
+    font-size: 16px;
+    text-align: center;
+    padding-top: 16px;
+  }
+}
+  .sectionTitle h1 {
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+  font-size: 3rem;
+}
+@media (max-width: 1000px) {
+   .sectionTitle h1 {
+    font-size: 32px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 24px;
+    
+  }
+}
+
+.active {
+
+  border-bottom: 1px solid black;
+
+  @media (max-width: 1000px) {
+
+
+    border:none;
+    background-color: grey;
+
+  }
+
+
+}
+
+

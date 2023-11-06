@@ -1,0 +1,33 @@
+.logos {
+
+    margin-top: 5rem;
+
+    @media (max-width: 1400px) {
+
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    
+    .container {
+
+        display:flex;
+        
+
+        img {
+
+            @media (max-width: 1200px) {
+
+                width: 20%;
+
+            }
+        }
+
+    
+    }
+
+    @media (max-width: 500px) {
+
+        display:none;
+        
+    }
+}

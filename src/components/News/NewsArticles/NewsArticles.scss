@@ -1,0 +1,99 @@
+.container {
+
+
+    .section-title-news {
+
+        margin-top: 120px;
+        margin-bottom: 40px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 1000px) {
+
+          
+            display:block;
+        }
+    }
+
+    .business-articles {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+
+        @media (min-width: 1000px) {
+
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (min-width: 1400px) {
+
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        article {
+            
+            margin-bottom: 20px;
+            position: relative;
+            text-decoration: none;
+
+            &:before {
+
+                position: absolute;
+                content: "";
+                height: 2px;
+                width: 100%;
+                transform: scaleX(0);
+                transition: transform 0.3s ease;
+                background-color: #000;
+                bottom: 0;
+            }
+
+            &:hover:before {
+
+                transform: scaleX(1);
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+            div {
+                position: relative;
+                
+                .date {
+
+                    position: absolute;
+                    left: 20px;
+                    background-color: #F9D783;
+                    padding: 6px;
+                    top: 20px;
+                    margin: 0;
+                    max-height: 56px;
+                    height: 100%;
+                    text-align: center;
+
+                    p {
+
+                        color: black;
+                    }
+                    
+                }
+                .article-image {
+
+                    max-width: 420px;
+                    width: 100%;
+                    max-height: 230px;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            p {
+
+                font-weight: 400;
+                color: #6A6C71;
+            }
+        }
+
+    }
+}

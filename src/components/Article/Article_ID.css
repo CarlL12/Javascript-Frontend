@@ -1,0 +1,151 @@
+.container .title {
+  margin-top: 123px;
+}
+.container .infobox {
+  display: flex;
+  margin-top: 35px;
+}
+@media (max-width: 1000px) {
+  .container .infobox {
+    justify-content: center;
+  }
+}
+.container .infobox p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .infobox p i {
+  font-size: 8px;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+.container .flex {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1000px) {
+  .container .flex {
+    margin-top: 40px;
+  }
+}
+.container .flex .articleContent {
+  max-width: 824px;
+  width: 100%;
+}
+.container .flex .articleContent .articleImage {
+  max-width: 758px;
+  width: 100%;
+}
+.container .flex .articleContent p {
+  color: RGBA(25, 25, 25, 0.7);
+  margin-top: 47px;
+}
+.container .flex .articleContent .quotes {
+  display: flex;
+  margin-top: 40px;
+}
+.container .flex .articleContent .quotes img {
+  margin-right: 24px;
+  height: 20px;
+}
+.container .flex .articleContent .quotes .text {
+  font-weight: 500;
+  color: black;
+  font-size: 22px;
+  margin: 0;
+}
+.container .flex .articleContent .categories {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+}
+@media (max-width: 1000px) {
+  .container .flex .articleContent .categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 370px) {
+  .container .flex .articleContent .categories {
+    display: none;
+  }
+}
+.container .flex .articleContent .categories a {
+  padding: 10px 25px;
+  background-color: #F3F3F3;
+  border-radius: 20px;
+}
+.container .flex .articleContent .categories a:hover {
+  background-color: rgba(0, 0, 0, 0.37);
+}
+@media (max-width: 1000px) {
+  .container .flex .inputPostsCategories {
+    display: none;
+  }
+}
+.container .flex .inputPostsCategories .posts {
+  border: 1px solid grey;
+  max-width: 420px;
+  width: 100%;
+  padding: 40px;
+  margin-top: 40px;
+}
+.container .flex .inputPostsCategories .posts h3 {
+  font-size: 22px;
+  text-decoration: underline;
+}
+.container .flex .inputPostsCategories .posts a:hover h4 {
+  text-decoration: underline;
+}
+.container .flex .inputPostsCategories .posts a h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.container .flex .inputPostsCategories .posts a p {
+  font-size: 14px;
+  color: RGBA(25, 25, 25, 0.7);
+  border-bottom: 1px solid rgba(182, 179, 179, 0.877);
+  padding-bottom: 15px;
+}
+.container .flex .inputPostsCategories .posts a .noBorder {
+  border: none;
+}
+.container .flex .inputPostsCategories .inputField {
+  position: relative;
+}
+.container .flex .inputPostsCategories .inputField i {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 20px;
+}
+.container .flex .inputPostsCategories .inputField input {
+  padding: 10px 40px;
+  max-width: 420px;
+  width: 100%;
+  border-radius: 15px;
+  border: none;
+  background-color: #F3F3F3;
+}
+.container .flex .inputPostsCategories .categories {
+  border: 1px solid grey;
+  padding: 40px;
+  margin-top: 50px;
+}
+.container .flex .inputPostsCategories .categories h3 {
+  text-decoration: underline;
+}
+.container .flex .inputPostsCategories .categories a {
+  display: flex;
+}
+.container .flex .inputPostsCategories .categories a:hover h6 {
+  text-decoration: underline;
+}
+.container .flex .inputPostsCategories .categories a p {
+  color: RGBA(25, 25, 25, 0.7);
+  margin-left: 10px;
+  text-decoration: none;
+}

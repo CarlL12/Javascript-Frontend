@@ -1,0 +1,41 @@
+.all-rights-reserved {
+
+    background-color: #0E1021;
+
+    .container {
+        display:flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        p {
+            color: RGBA(255,255,255,0.7 );
+
+            @media (max-width: 770px) {
+
+                text-align: center;
+            }
+            
+            
+        }
+
+        .socialmedia {
+            
+            @media (max-width: 770px) {
+
+                display:none;
+            }
+
+            a {
+                
+                i {
+
+                    color: white;
+                    margin-left: 1.5rem;
+                }
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,26 @@
+.all-rights-reserved {
+  background-color: #0E1021;
+}
+.all-rights-reserved .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.all-rights-reserved .container p {
+  color: RGBA(255, 255, 255, 0.7);
+}
+@media (max-width: 770px) {
+  .all-rights-reserved .container p {
+    text-align: center;
+  }
+}
+@media (max-width: 770px) {
+  .all-rights-reserved .container .socialmedia {
+    display: none;
+  }
+}
+.all-rights-reserved .container .socialmedia a i {
+  color: white;
+  margin-left: 1.5rem;
+}

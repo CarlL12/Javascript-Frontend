@@ -1,0 +1,132 @@
+.project-and-case {
+
+    .container {
+
+
+        .project-and-cases {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+
+            @media (max-width: 500px) {
+
+                grid-template-columns: 1fr;
+            }
+
+            article {
+
+
+                &:before {
+
+                    background-color: #000;
+                    transform: scaleX(0);
+                    transition: transform 0.3s ease;
+
+                }
+
+                &:hover:before {
+
+                    transform: scaleX(1);
+                }
+
+                &:hover {
+
+
+                    cursor: pointer;
+                    box-shadow: 0px 0px 40px #83858aab;
+                    background-color: #83858a28;
+                    border-radius: 20px;
+                    transition: background-color 0.4s ease-in-out, box-shadow 0.25s ease-in-out;
+
+
+                    a {
+
+                        text-decoration: underline;
+                    }
+                }
+
+                img {
+                    height: 60%;
+                    width: 100%;
+
+                }
+    
+                h3 {
+
+                    padding-top: 35px;
+                    padding-bottom: 16px;
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                    border-bottom: 2px solid rgb(211, 211, 211);
+                    
+                    @media (max-width: 1400px) {
+
+                        font-size: 16px;
+                        padding-top: 10px;
+                    }
+
+                    
+    
+                }
+    
+                a {
+                    
+                    display: block;
+                    text-align: right;
+                    margin-top: 2rem;
+                    margin-bottom: 48px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    padding-right: 1rem;
+
+                    @media (max-width: 1200px) {
+
+                        margin-top: 1rem;
+                    }
+
+                    i {
+
+                        margin-left: 6px;
+                    }
+
+    
+                }
+
+            }
+
+        }
+
+        .sectionTitle {
+            
+
+            text-align: center;
+            margin-bottom: 5.8rem;
+
+
+            h1 {
+
+
+                @media (max-width: 1000px) {
+
+                    border-bottom: 1px solid black;
+                    padding-bottom: 24px;
+                }
+
+            }
+        }
+
+        .button{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            margin-bottom: 92px;
+
+
+        }
+    }
+
+
+}

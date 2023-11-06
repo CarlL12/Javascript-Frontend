@@ -1,0 +1,22 @@
+.logos {
+  margin-top: 5rem;
+}
+@media (max-width: 1400px) {
+  .logos {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+.logos .container {
+  display: flex;
+}
+@media (max-width: 1200px) {
+  .logos .container img {
+    width: 20%;
+  }
+}
+@media (max-width: 500px) {
+  .logos {
+    display: none;
+  }
+}

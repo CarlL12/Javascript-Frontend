@@ -1,0 +1,102 @@
+.choose-us {
+  position: relative;
+}
+.choose-us .twowomen {
+  position: absolute;
+  right: 24rem;
+  top: 2rem;
+  width: 33%;
+}
+@media (max-width: 1400px) {
+  .choose-us .twowomen {
+    right: 15rem;
+    top: 10rem;
+  }
+}
+@media (max-width: 1200px) {
+  .choose-us .twowomen {
+    right: 10rem;
+    top: 10rem;
+  }
+}
+@media (max-width: 1000px) {
+  .choose-us .twowomen {
+    display: none;
+  }
+}
+.choose-us .bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 58%;
+}
+@media (max-width: 1000px) {
+  .choose-us .bg {
+    display: none;
+  }
+}
+.choose-us .sectionfive {
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+  position: relative;
+}
+.choose-us .sectionfive .why {
+  padding-right: 7rem;
+}
+@media (max-width: 1000px) {
+  .choose-us .sectionfive .why {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.choose-us .sectionfive .why .sectionTitle h1 {
+  width: 40%;
+}
+@media (max-width: 1000px) {
+  .choose-us .sectionfive .why .sectionTitle h1 {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 24px;
+    width: auto;
+  }
+}
+.choose-us .sectionfive .why .buttons {
+  margin-top: 4rem;
+  margin-left: 1rem;
+}
+@media (max-width: 500px) {
+  .choose-us .sectionfive .why .buttons {
+    margin-top: 3rem;
+    margin-left: 0;
+  }
+}
+.choose-us .sectionfive .why .buttons .ChooseUsBox {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 20px;
+}
+.choose-us .sectionfive .why .buttons .ChooseUsBox .ChooseUsBoxIcon {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  gap: 2.6rem;
+  margin-right: 1rem;
+}
+@media (max-width: 500px) {
+  .choose-us .sectionfive .why .buttons .ChooseUsBox .ChooseUsBoxIcon {
+    margin: 20px;
+    justify-content: space-between;
+  }
+}
+.choose-us .sectionfive .why .buttons .ChooseUsBox .ChooseUsBoxIcon i {
+  border: rgba(201, 201, 201, 0.575) solid;
+  padding: 1rem;
+  border-radius: 2rem;
+  border-width: 0.2rem;
+}
+.choose-us .sectionfive .why .buttons .ChooseUsBox .ChooseUsBoxText h1 {
+  font-size: 1.4rem;
+}

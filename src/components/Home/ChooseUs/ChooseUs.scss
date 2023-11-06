@@ -1,0 +1,153 @@
+.choose-us {
+
+    position: relative;
+
+    .twowomen {
+
+        position: absolute;
+        right: 24rem;
+        top: 2rem;
+        width: 33%;
+
+        @media (max-width: 1400px) {
+
+            right: 15rem;
+            top: 10rem;
+        }
+
+        @media (max-width: 1200px) {
+
+            right: 10rem;
+            top: 10rem;
+        }
+                          
+        @media (max-width: 1000px) {
+            display:none;
+
+        }
+    }
+
+    .bg {
+
+        position: absolute;
+        right: 0;
+        bottom:0;
+        width: 58%;
+            
+            
+        @media (max-width: 1000px) {
+
+            display:none;
+        }
+
+    }
+
+    .sectionfive {
+
+        margin-top: 5rem;
+        margin-bottom: 6rem;
+        position: relative;
+        
+        
+        .why {
+
+            padding-right: 7rem;
+
+            @media (max-width: 1000px) {
+
+                padding:0;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .sectionTitle {
+
+
+
+                h1 {
+
+                    width: 40%;
+
+                    @media (max-width: 1000px) {
+
+                        text-align:center;
+                        border-bottom: 1px solid black;
+                        padding-bottom: 24px;
+                        width: auto;
+                    }
+                }
+
+            }
+
+            .buttons {
+
+                margin-top: 4rem;
+                margin-left: 1rem;
+
+                @media (max-width: 500px) {
+
+                    margin-top: 3rem;
+                    margin-left: 0;
+                }
+
+
+                .ChooseUsBox {
+
+                    display: flex;
+                    gap: 2rem;
+                    margin-bottom: 20px;
+                    
+                    .ChooseUsBoxIcon {
+
+                        display:flex;
+                        flex-direction: column;
+                        font-size: 1.5rem;
+                        gap: 2.6rem;
+                        margin-right: 1rem;
+
+                        @media (max-width: 500px) {
+
+                            margin: 20px;
+                            justify-content: space-between;
+                        }
+
+                        i {
+
+                            border: rgba(201, 201, 201, 0.575) solid;
+                            padding: 1rem;
+                            border-radius: 2rem;
+                            border-width: 0.2rem;
+                        }
+                    
+
+
+                    }
+
+                    .ChooseUsBoxText {
+
+
+
+                        h1 {
+
+                            font-size: 1.4rem;
+                            
+                        }
+
+
+                    }
+
+
+
+                }
+
+
+            }
+
+
+        }
+
+    }
+
+}

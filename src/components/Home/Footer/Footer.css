@@ -1,0 +1,92 @@
+footer {
+  background-color: #0E1021;
+  border-bottom: solid RGBA(255, 255, 255, 0.2);
+  position: relative;
+}
+footer .Element4 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+@media (max-width: 1000px) {
+  footer .Element4 {
+    display: none;
+  }
+}
+footer .container {
+  display: flex;
+  padding-top: 132px;
+  gap: 5rem;
+  justify-content: space-around;
+  padding-bottom: 88px;
+}
+@media (max-width: 770px) {
+  footer .container {
+    padding: 70px 0px;
+    display: block;
+    justify-content: space-between;
+  }
+}
+footer .container .logo-and-text {
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  footer .container .logo-and-text {
+    display: none;
+  }
+}
+footer .container .logo-and-text p {
+  color: RGBA(255, 255, 255, 0.7);
+  padding-top: 2rem;
+}
+footer .container .links {
+  display: flex;
+  gap: 2rem;
+}
+@media (max-width: 1000px) {
+  footer .container .links {
+    gap: 0;
+  }
+}
+@media (max-width: 770px) {
+  footer .container .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+footer .container .links div {
+  width: 12rem;
+}
+@media (max-width: 770px) {
+  footer .container .links div {
+    width: 50%;
+    margin-bottom: 16px;
+    margin-left: 18px;
+  }
+}
+footer .container .links div h3 {
+  color: #FFFFFF;
+  padding-bottom: 42px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+}
+@media (max-width: 770px) {
+  footer .container .links div h3 {
+    padding-bottom: 10px;
+  }
+}
+footer .container .links div a {
+  display: block;
+  color: RGBA(255, 255, 255, 0.7);
+  margin-bottom: 1rem;
+}
+@media (max-width: 770px) {
+  footer .container .links div a {
+    margin-bottom: 6px;
+    font-size: 12px;
+  }
+}
+footer .container .links div a:hover {
+  text-decoration: underline;
+  color: white;
+}

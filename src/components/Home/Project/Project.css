@@ -1,0 +1,80 @@
+.project-and-case .container .project-and-cases {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+@media (max-width: 500px) {
+  .project-and-case .container .project-and-cases {
+    grid-template-columns: 1fr;
+  }
+}
+.project-and-case .container .project-and-cases article:before {
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.project-and-case .container .project-and-cases article:hover:before {
+  transform: scaleX(1);
+}
+.project-and-case .container .project-and-cases article:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 40px rgba(131, 133, 138, 0.6705882353);
+  background-color: rgba(131, 133, 138, 0.1568627451);
+  border-radius: 20px;
+  transition: background-color 0.4s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+.project-and-case .container .project-and-cases article:hover a {
+  text-decoration: underline;
+}
+.project-and-case .container .project-and-cases article img {
+  height: 60%;
+  width: 100%;
+}
+.project-and-case .container .project-and-cases article h3 {
+  padding-top: 35px;
+  padding-bottom: 16px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  border-bottom: 2px solid rgb(211, 211, 211);
+}
+@media (max-width: 1400px) {
+  .project-and-case .container .project-and-cases article h3 {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+}
+.project-and-case .container .project-and-cases article a {
+  display: block;
+  text-align: right;
+  margin-top: 2rem;
+  margin-bottom: 48px;
+  font-size: 14px;
+  font-weight: 500;
+  padding-right: 1rem;
+}
+@media (max-width: 1200px) {
+  .project-and-case .container .project-and-cases article a {
+    margin-top: 1rem;
+  }
+}
+.project-and-case .container .project-and-cases article a i {
+  margin-left: 6px;
+}
+.project-and-case .container .sectionTitle {
+  text-align: center;
+  margin-bottom: 5.8rem;
+}
+@media (max-width: 1000px) {
+  .project-and-case .container .sectionTitle h1 {
+    border-bottom: 1px solid black;
+    padding-bottom: 24px;
+  }
+}
+.project-and-case .container .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 92px;
+}

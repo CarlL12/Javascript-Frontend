@@ -1,0 +1,65 @@
+.news-updates {
+  background-color: #F0EFE9;
+  position: relative;
+}
+.news-updates .element3 {
+  position: absolute;
+  right: 0;
+  bottom: 4rem;
+}
+@media (max-width: 770px) {
+  .news-updates .element3 {
+    display: none;
+  }
+}
+.news-updates .container {
+  padding-top: 104px;
+  display: flex;
+}
+@media (max-width: 1400px) {
+  .news-updates .container {
+    flex-direction: column;
+    padding-top: 60px;
+  }
+}
+.news-updates .container h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+@media (max-width: 1400px) {
+  .news-updates .container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+.news-updates .container .btn-mail-subscribe {
+  display: flex;
+  gap: 2rem;
+  margin-left: 10rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 106px;
+}
+@media (max-width: 1400px) {
+  .news-updates .container .btn-mail-subscribe {
+    gap: 24px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 520px) {
+  .news-updates .container .btn-mail-subscribe {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+}
+.news-updates .container .btn-mail-subscribe input {
+  border-radius: 2rem;
+  padding: 1rem;
+  padding-right: 1.5rem;
+  border: none;
+}
+@media (max-width: 990px) {
+  .news-updates .container .btn-mail-subscribe input {
+    padding: 12px 32px;
+  }
+}

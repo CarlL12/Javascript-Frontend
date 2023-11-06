@@ -1,0 +1,131 @@
+footer {
+
+    background-color: #0E1021;
+    border-bottom: solid RGBA(255,255,255,0.2 );
+    position: relative;
+
+    .Element4 {
+
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        @media (max-width: 1000px) {
+
+            display:none;
+        }
+
+    }
+
+    .container {
+
+        display:flex;
+        padding-top: 132px;
+        gap: 5rem;
+        justify-content: space-around;
+        padding-bottom: 88px;
+
+        @media (max-width: 770px) {
+
+            padding: 70px 0px;
+            display:block;
+            justify-content: space-between
+            
+
+      
+        }
+     
+
+        .logo-and-text {
+
+            width: 100%;
+
+            @media (max-width: 1200px) {
+
+                display:none;
+            }
+
+            img {
+
+                
+
+            }
+
+            p {
+                color: RGBA(255,255,255,0.7 );
+                padding-top: 2rem;
+
+            }
+        }
+
+        .links {
+            display: flex;
+            gap: 2rem;
+
+            @media (max-width: 1000px) {
+
+                gap: 0;
+            }
+
+            @media (max-width: 770px) {
+
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+                
+              
+            }
+
+            div {
+                width: 12rem;
+
+                @media (max-width: 770px) {
+
+                    width: 50%;
+                    margin-bottom: 16px;
+                    margin-left: 18px;
+                                       
+                }
+                                
+                h3 {
+
+                    color: #FFFFFF;
+                    padding-bottom: 42px;
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+
+                    @media (max-width: 770px) {
+
+                        padding-bottom: 10px;
+                    }
+
+                }
+
+                a   {
+
+                    display: block;
+                    color: RGBA(255,255,255,0.7 );
+                    margin-bottom: 1rem;
+
+                    @media (max-width: 770px) {
+
+                        margin-bottom: 6px;
+                        font-size: 12px;
+                    }
+
+                    &:hover {
+
+                        text-decoration: underline;
+                        color: white;
+                    }
+                    
+                    
+
+                }
+            }
+
+
+
+
+        }
+    }
+}

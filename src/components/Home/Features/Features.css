@@ -1,0 +1,138 @@
+.features {
+  margin-top: 6rem;
+  margin-bottom: 10rem;
+  border-color: #EBEBEB;
+  border-style: solid;
+  padding-top: 5rem;
+  padding-left: 2rem;
+  padding-bottom: 5rem;
+  padding-right: 8rem;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (max-width: 790px) {
+  .features {
+    margin: 0;
+    padding: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    width: 100%;
+    border: none;
+    padding-left: 0;
+    padding-top: 0;
+  }
+}
+@media (max-width: 1400px) {
+  .features {
+    margin: 0;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5rem;
+    padding-top: 40px;
+    padding-left: 0px;
+  }
+}
+.features .container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 770px) {
+  .features .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.features .container .section-title p {
+  margin-left: 12px;
+  margin-top: 4rem;
+}
+@media (max-width: 770px) {
+  .features .container .section-title p {
+    display: none;
+  }
+}
+.features .container .section-title p .btn-yellow {
+  padding-left: 11rem;
+  padding-right: 11rem;
+}
+@media (max-width: 770px) {
+  .features .container .section-title p .btn-yellow {
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (max-width: 1420px) {
+  .features .container .section-title p .btn-yellow {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media (max-width: 770px) {
+  .features .container .section-title {
+    display: block;
+    padding: 0;
+  }
+}
+.features .container .features-advice {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 770px) {
+  .features .container .features-advice .Advice {
+    margin-top: 12px;
+  }
+}
+.features .container .features-advice .Advice i {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 500px) {
+  .features .container .features-advice .Advice i {
+    font-size: 24px;
+    margin: 0;
+  }
+}
+.features .container .features-advice .Advice h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+@media (max-width: 500px) {
+  .features .container .features-advice .Advice h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .features .container .features-advice .Advice p {
+    font-size: 12px;
+  }
+}
+.features .container .btn-770 {
+  text-align: center;
+  margin-top: 4rem;
+}
+@media (min-width: 770px) {
+  .features .container .btn-770 {
+    display: none;
+  }
+}
+.features .container .btn-770 .btn-yellow {
+  padding-left: 11rem;
+  padding-right: 11rem;
+}
+@media (max-width: 500px) {
+  .features .container .btn-770 .btn-yellow {
+    padding: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+@media (max-width: 1420px) {
+  .features .container .btn-770 .btn-yellow {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
