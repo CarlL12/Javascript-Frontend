@@ -1,30 +1,15 @@
-import React, { useEffect, useState } from 'react'
+
 import SectionTitle from '../../Generics/sectionTitle'
 import { Link } from 'react-router-dom'
 import './NewsArticles.css'
 import Button from '../../Generics/Button'
+import { useArticel } from '../../../contexts/ArticelContext'
 
 const NewsArticles = ({articleSize}) => {
 
-  const [articles, setArticles] = useState([])
+  const {articles} = useArticel()
 
-  useEffect(() => {
-    async function getArticles () {
-      try {
-        const data = await fetch("https://win23-assignment.azurewebsites.net/api/articles")
-        if(data.ok) {
 
-          const articleData = await data.json()
-          setArticles(articleData)
-        }
-      }
-      catch(error) {
-        console.error(error);
-      }
-    }
-
-    getArticles()
-  }, [])
 
   const formatDate = (apiDate) => {
     const date = new Date(apiDate);

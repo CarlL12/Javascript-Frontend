@@ -1,34 +1,21 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect} from 'react'
 import SectionTitle from '../Generics/sectionTitle'
 import './Article_ID.css'
-import image from '../../Assets/Woman.svg'
 import cite from '../../Assets/Shape.png'
 import { Link, useParams } from 'react-router-dom'
+import { useArticel } from '../../contexts/ArticelContext'
 
 const Article_ID = () => {
 
     const params = useParams()
     const id = params.id
-    const [article, setArticle] = useState([])
 
+    const {article, getArticle} = useArticel()
 
     useEffect(() => {
-    async function getArticle() {
-        try {
-            const data = await fetch (`https://win23-assignment.azurewebsites.net/api/articles/${id}`)
-            if(data.ok) {
-                const articleData = await data.json()
-                setArticle(articleData)
-            }
-        }
-        catch(error) {
-            console.log('Error getting data')
-        }
-    }
 
-    getArticle()
+        getArticle(id)
     }, [id])
-
 
 
     function convertDate() {
@@ -40,7 +27,6 @@ const Article_ID = () => {
     }
 
 
-
   return (
     <div className="container">
         
@@ -49,8 +35,7 @@ const Article_ID = () => {
         </div>
         
         <div className="infobox">
-
-            
+         
             <p>{convertDate()}</p>
             <p><i class="fa-solid fa-circle"></i>{article.category}</p>
             <p><i class="fa-solid fa-circle"></i>{article.author}</p>
@@ -61,7 +46,7 @@ const Article_ID = () => {
 
             <div className="articleContent" key={article.id}>
 
-                <img className="articleImage"src={article.imageUrl} alt="article image"/>
+                <img className="articleImage"src={article.imageUrl} alt="article "/>
 
                 <p>{article.content}</p>
 
@@ -74,7 +59,6 @@ const Article_ID = () => {
 
                 <div className="categories">
 
-
                     <Link to="">Digitalization</Link>
                     <Link>School</Link>
                     <Link>IT</Link>
@@ -83,7 +67,6 @@ const Article_ID = () => {
                     <Link>Tech</Link>
 
                 </div>
-
 
             </div>
 
