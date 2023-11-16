@@ -21,8 +21,6 @@ const NewsArticles = ({articleSize}) => {
   };
   
 
-
-
   if(articleSize) {
     return(
     <section className="container">
